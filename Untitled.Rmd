@@ -1,0 +1,44 @@
+---
+title: "Module 1"
+author: "Alyssa Lai"
+date: "April 17, 2019"
+output: word_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Simple Math Functions
+
+R can perform very simple mathematical calculations in console and command line windows. There are some built in constants such as pi.
+
+```{r echo = FALSE}
+
+8 + 5
+10 - 6/2
+(10 - 6)/2
+10*5
+15/5
+10^5
+3 * pi
+
+```
+
+## Assignments of Variables
+
+Variables can take the form of any combination of letters and numbers, and can start with a period (cannot be followed by a number if the variable name starts with a period). You can use these variables in place of the exact numerical value (if applicable) in the simple mathematical functions done above, and more. A variable can also hold the solution to a simple mathematical function if you're too lazy to do it or if they're stored in variables.
+
+```{r echo = FALSE}
+
+x <- 6
+x
+y <- 5
+y
+
+z <- x * y
+z
+x2 <- x^2
+x2
+
+```
