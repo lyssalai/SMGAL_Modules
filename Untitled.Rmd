@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 R can perform very simple mathematical calculations in console and command line windows. There are some built in constants such as pi.
 
-```{r echo = FALSE}
+```{r}
 
 8 + 5
 10 - 6/2
@@ -27,9 +27,11 @@ R can perform very simple mathematical calculations in console and command line 
 
 ## Assignments of Variables
 
-Variables can take the form of any combination of letters and numbers, and can start with a period (cannot be followed by a number if the variable name starts with a period). You can use these variables in place of the exact numerical value (if applicable) in the simple mathematical functions done above, and more. A variable can also hold the solution to a simple mathematical function if you're too lazy to do it or if they're stored in variables.
+Variables can take the form of any combination of letters and numbers, and can start with a period (cannot be followed by a number if the variable name starts with a period).
+You can use these variables in place of the exact numerical value (if applicable) in the simple mathematical functions done above, and more.
+A variable can also hold the solution to a simple mathematical function if you're too lazy to do it or if they're stored in variables.
 
-```{r echo = FALSE}
+```{r}
 
 x <- 6
 x
@@ -40,5 +42,37 @@ z <- x * y
 z
 x2 <- x^2
 x2
+
+```
+
+## More Built-In Functions
+
+There are several mathematical functions that are already built into R. These include logarithms, factorials, roots, absolute values, and rounding. Of course, they work with both variables and numerical values. The string ? followed by the function with nothing in the parenthesis (eg. ?abs()) will show you how to use the function and what to type into the parentheses.
+
+```{r}
+
+x <- 10
+log(x)
+factorial(x)
+
+y <- 81
+sqrt(y)
+
+z <- -8.349218
+round(z, digits = 3)
+
+abs(z * y)
+
+```
+
+### Handling Variables Commands
+
+There are commands that are built into R that allows you to see the amount of variables that you have currently stored, and there is a function that you can use to delete all of the variables so you an start anew if needed.
+
+```{r}
+
+ls() #Shows all the names of variables that you have already made. It doesn't show the values or what if contained in each variable.
+
+rm(list = rm()) #Deletes all of the variables that you have already defined. Must have variables already stored, or else this function will result as an error.
 
 ```
